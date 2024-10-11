@@ -86,7 +86,6 @@ const getTeamData2 = async (teams) => {
         const projection = await res2.json();
         addTeamRecord(team.id, record.items[0].summary, projection.projectedWins);
     }
-    console.log(teams)
     return teams;
 }
 
@@ -127,7 +126,6 @@ getTeamData2(teamList)
     .then(teams => {
         const standings = []
         contestantsThisYear.forEach(contestant => calcRecord2(contestant, teams, standings));
-        console.log(standings)
         return standings
     })
     .then((standings) => {
