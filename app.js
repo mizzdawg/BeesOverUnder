@@ -116,7 +116,6 @@ function calcRecord2(user, teams, standings) {
         const result1 = findLocks(teamInfo, ou);
         if (result1.lockWin === "yes") {
             obj.lockWin = "yes";
-            lockWins++;
         } else if (result1.lockLoss === "yes") {
             obj.lockLoss = "yes";
         }
