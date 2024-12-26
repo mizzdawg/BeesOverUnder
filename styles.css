@@ -22,7 +22,7 @@ body {
 }
 
 .animate-panel {
-    animation: slide-in 0.2s linear forwards;
+    animation: slide-in 0.2s linear 1.5s forwards;
 }
 
 .load-panel img {
