@@ -14,12 +14,79 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="load-panel">
+        <img src="images/benny-bees.png" alt="Benny Bees Himself">
+        <div class="load-panel-text">
+            <h2>One Moment Pal</h2>
+            <span id="dot-1" class="dot"></span>
+            <span id="dot-2" class="dot"></span>
+            <span id="dot-3" class="dot"></span>
+        </div>
+    </div>
+    <div class="container-v">
         <div class="main-header-container">
             <h1 class="main-header">The Bees O/U Contest</h1>
         </div>
+        <div class="tabs-container">
+            <div class="tab tab-active"><span>Projected Standings</span></div>
+            <div class="tab"><span>Contestant Picks</span></div>
+        </div>
         <div class="main-content">
-            <div id="data-table-container"></div>
+            <div id="data-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Entry Name</th>
+                            <th>Locks</th>
+                            <th>Proj. W/L</th>
+                            <th>Proj. Tiebreak W/L</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="main-content content-hide">
+            <div class="container-v">
+                <div class="table-container">
+                    <table class="table-fixed-left">
+                        <thead>
+                            <tr class="table-left-tr">
+                                <th class="table-left-header">Entry</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-fixed">
+
+                        </tbody>
+                    </table>
+                    <div class="table-scroll-wrap">
+                        <div class="table-control-scroll">
+                            <table class="table-scroll">
+                                <thead>
+                                    <tr class="table-scroll-tr">
+                                        <th class="table-custom-header">Pick 1</th>
+                                        <th class="table-custom-header">Pick 2</th>
+                                        <th class="table-custom-header">Pick 3</th>
+                                        <th class="table-custom-header">Pick 4</th>
+                                        <th class="table-custom-header">Pick 5</th>
+                                        <th class="table-custom-header">Pick 6</th>
+                                        <th class="table-custom-header">Pick 7</th>
+                                        <th class="table-custom-header">Pick 8</th>
+                                        <th class="table-custom-header">Pick 9</th>
+                                        <th class="table-custom-header">Pick 10</th>
+                                        <th colspan="3" class="table-custom-header">Tiebreakers</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-scroll">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="app.js"></script>
